@@ -2,7 +2,7 @@ class CreateAdmins < ActiveRecord::Migration
   def change
     create_table :admins do |t|
       t.integer :rut
-      t.string :nombre
+      t.sring :nombre
       t.integer :telefono
       t.string :direccion
 
