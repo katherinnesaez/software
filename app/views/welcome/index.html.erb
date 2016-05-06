@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <h1>Peluquería Unisex Katherinne<h1>
-  <br>
-  <br>
-  <nav class="navbar navbar-default">
-    <table>
-      <div class="row">
-          <div class="col-md-3">
-            	<%= link_to "Inicio",{ controller: "welcome"}, class: "btn btn-lg "%></div>
-          <div class="col-md-3">
-              	<%= link_to "Productos",products_path, class: "btn btn-lg "%></div>
-          <div class="col-md-3">
-          		<%= link_to "Categorias", categories_path, class: "btn btn-lg "%></div>
-          <div class="col-md-3">
-				<%= link_to "Contacto",{ model: "contacto"}, class: "btn btn-lg "%></div>
-          </div>
-      </div>
-    </table>
-  </nav>
-</head>
+<br>
+<center><h1> PELUQUERIA UNISEX KATHERINNE <h1><center>
+
+<br>
+<%= link_to 'Servicios', services_path %>
+<br>
+<br>
+<br>
+<br>
+<%= link_to 'Productos', products_path %>
+<br>
+<br>
+<br>
+<br>
+<%= link_to 'Categorias', categories_path %>
+<br>
+
+<body background="<%= asset_path 'fondo.jpg' %>" width=100%>
