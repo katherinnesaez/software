@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Admins</h1>
+<h1>Listando Administradores</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= admin.nombre %></td>
         <td><%= admin.telefono %></td>
         <td><%= admin.direccion %></td>
-        <td><%= link_to 'Show', admin %></td>
-        <td><%= link_to 'Edit', edit_admin_path(admin) %></td>
-        <td><%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', admin %></td>
+        <td><%= link_to 'Editar', edit_admin_path(admin) %></td>
+        <td><%= link_to 'Eliminar', admin, method: :delete, data: { confirm: 'Está Seguro/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Admin', new_admin_path %>
+<%= link_to 'Nuevo Administrador', new_admin_path %>

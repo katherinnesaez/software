@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Services</h1>
+<h1>Listando Servicios</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= service.nombre %></td>
         <td><%= service.precio %></td>
         <td><%= service.descripcion %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', service %></td>
+        <td><%= link_to 'Editar', edit_service_path(service) %></td>
+        <td><%= link_to 'Eliminar', service, method: :delete, data: { confirm: 'Está Seguro/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Service', new_service_path %>
+<%= link_to 'Nuevo Servicio', new_service_path %>

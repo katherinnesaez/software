@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Sales</h1>
+<h1>Listando Ventas</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= sale.ganancia %></td>
         <td><%= sale.descripcion %></td>
-        <td><%= link_to 'Show', sale %></td>
-        <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
-        <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', sale %></td>
+        <td><%= link_to 'Editar', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Eliminar', sale, method: :delete, data: { confirm: 'Está Seguro/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Sale', new_sale_path %>
+<%= link_to 'Nueva Venta', new_sale_path %>

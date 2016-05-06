@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Reservations</h1>
+<h1>Listando Reservas</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= reservation.fecha %></td>
         <td><%= reservation.disponibilidad %></td>
-        <td><%= link_to 'Show', reservation %></td>
-        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', reservation %></td>
+        <td><%= link_to 'Editar', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Eliminar', reservation, method: :delete, data: { confirm: 'Está Seguro/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Reservation', new_reservation_path %>
+<%= link_to 'Nueva Reserva', new_reservation_path %>

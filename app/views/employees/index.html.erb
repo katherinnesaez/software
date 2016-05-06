@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Employees</h1>
+<h1>Listando Empleados</h1>
 
 <table>
   <thead>
@@ -22,9 +22,9 @@
         <td><%= employee.telefono %></td>
         <td><%= employee.direccion %></td>
         <td><%= employee.email %></td>
-        <td><%= link_to 'Show', employee %></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', employee %></td>
+        <td><%= link_to 'Editar', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Eliminar', employee, method: :delete, data: { confirm: 'Está Seguro/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
