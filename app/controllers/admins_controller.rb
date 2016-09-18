@@ -33,6 +33,7 @@ class AdminsController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @admin.errors, status: :unprocessable_entity }
+        
       end
     end
   end
