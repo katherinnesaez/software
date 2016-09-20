@@ -28,7 +28,7 @@ class DetailsController < ApplicationController
 
     respond_to do |format|
       if @detail.save
-        format.html { redirect_to @detail, notice: 'Detail was successfully created.' }
+        format.html { redirect_to @detail, notice: 'Detalle de venta ha sido creado exitosamente.' }
         format.json { render :show, status: :created, location: @detail }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DetailsController < ApplicationController
   def update
     respond_to do |format|
       if @detail.update(detail_params)
-        format.html { redirect_to @detail, notice: 'Detail was successfully updated.' }
+        format.html { redirect_to @detail, notice: 'Detalle de venta ha sido actualizado' }
         format.json { render :show, status: :ok, location: @detail }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class DetailsController < ApplicationController
   def destroy
     @detail.destroy
     respond_to do |format|
-      format.html { redirect_to details_url, notice: 'Detail was successfully destroyed.' }
+      format.html { redirect_to details_url, notice: 'Detalle de venta ha sido eliminado' }
       format.json { head :no_content }
     end
   end

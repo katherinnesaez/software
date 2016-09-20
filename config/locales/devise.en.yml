@@ -3,8 +3,8 @@
 en:
   devise:
     confirmations:
-      confirmed: "Su dirección de correo electrónico ha sido confirmado con éxito."
-      send_instructions: "Usted recibirá un correo electrónico con instrucciones sobre cómo confirmar su dirección de correo electrónico en unos pocos minutos."
+      confirmed: 'Su dirección de correo electrónico ha sido confirmado con éxito.'
+      send_instructions: 'Usted recibirá un correo electrónico con instrucciones sobre cómo confirmar su dirección de correo electrónico en unos pocos minutos.'
       send_paranoid_instructions: "Si existe su dirección de correo electrónico en nuestra base de datos, recibirá un correo electrónico con instrucciones sobre cómo confirmar su dirección de correo electrónico en unos pocos minutos."
     failure:
       already_authenticated: "Usted ya ha iniciado sesión."
