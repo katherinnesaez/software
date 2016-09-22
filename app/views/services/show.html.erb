@@ -15,5 +15,9 @@
   <%= @service.descripcion %>
 </p>
 
+<div class= "field">
+<%= image_tag @service.cover.url(:mini)%>	
+</div>
+
 <%= link_to 'Editar', edit_service_path(@service) %> |
 <%= link_to 'Volver', services_path %>
